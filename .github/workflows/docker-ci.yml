@@ -16,7 +16,7 @@ jobs:
         run: docker build -t anjana-ci-demo .
 
       - name: Test Container Run
-        run: 16.	docker run -d --name test-app anjana-ci-demo
+        run: docker run -d --name test-app anjana-ci-demo
                   sleep 5
                   docker logs test-app
                   docker stop test-app
